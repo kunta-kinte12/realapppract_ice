@@ -59,6 +59,10 @@ class _MyAppState extends State<MyApp> {
               centerTitle: true,
               actions: [
                 IconButton(
+                  icon: Icon(
+                    Icons.add_box,
+                    color: Colors.pinkAccent,
+                  ),
                   onPressed: () {
                     showModalBottomSheet(
                         context: context,
@@ -76,10 +80,7 @@ class _MyAppState extends State<MyApp> {
                           // return DataInput(inputdata: _input);
                         });
                   },
-                  icon: Icon(
-                    Icons.add_box,
-                    color: Colors.pinkAccent,
-                  ),
+                  
                 ),
               ]),
           body: ListView(children: [
